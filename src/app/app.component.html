@@ -1,17 +1,33 @@
 <!-- Top Navigation Bar -->
 <nav class="top-nav">
     <div class="nav-links">
-        <a href="#">HOME</a>
-        <a href="#">SOBRE NOSOTROS</a>
+        <a style="display: block;" routerLink="./home">HOME</a>
+        <a style="display: block;" routerLink="./aboutus">SOBRE NOSOTROS</a>
+        <router-outlet />
     </div>
     
-    <div class="logo">EL MARATL</div>
+    <div class="logo">EL MARATI</div>
     
     <div class="contact-icons">
+        <div class="nav-links">
+            <a style="display: block;" routerLink="./shop">ORDENAR</a>
+            <a style="display: block;" routerLink="./contactus">CONTACTO</a>
+        </div>
+    </div>
+</nav>
+<!-- Top Navigation Bar -->
+<nav class="top-nav">
+    <div class="nav-links">
         <div class="phone">
             <i class="fas fa-phone"></i>
             <span>999 999 999</span>
         </div>
+    </div>
+    
+    <div class="logo"> </div>
+
+    
+    <div class="contact-icons">
         <div class="icons">
             <i class="bi bi-person"></i>
             <i class="bi bi-cart3"></i>
@@ -32,52 +48,4 @@
         <a href="#">BEBIDAS</a>
     </div>
 </nav>
-
-<!-- Rest of your page content would go here -->
-
-<div class="container">
-    <header>
-        <h1>EL MEJOR</h1>
-        <h2>CEVICHE DE PESCADO</h2>
-    </header>
-    
-    <div class="highlight">
-        <strong>Choose Your Favorite Ingredients</strong>
-    </div>
-    
-    <a href="#" class="cta-button">PIDELO AHORA</a>
-    
-    <div class="menu-categories">
-        <div class="menu-category">ARROCES</div>
-        <div class="menu-category">CEVICHES</div>
-        <div class="menu-category">CHICHARRONES</div>
-        <div class="menu-category">ENTRADAS</div>
-        <div class="menu-category">PESCADOS</div>
-        <div class="menu-category">SUDADOS</div>
-    </div>
-    
-    <hr>
-    
-    <div class="contact-info">
-        <h3>Contáctenos</h3>
-        <div class="contact-item">
-            <input type="checkbox" id="hours" checked>
-            <label for="hours">Lunes - Domingo: 10:00 am - 6:00 pm</label>
-        </div>
-        <div class="contact-item">
-            <input type="checkbox" id="address" checked>
-            <label for="address">Dirección Chorrillos</label>
-        </div>
-        <div class="contact-item">
-            <input type="checkbox" id="phone" checked disabled>
-            <label for="phone">999 999 999</label>
-        </div>
-    </div>
-    
-    <div class="about">
-        <div class="restaurant-name">El Maratl</div>
-        <div class="restaurant-type">Restaurante Cevicheria</div>
-        <p>El Maratl es un restaurante y cevicheria que nace con el fin de deleitar el paladar de todos nuestros clientes. Aquí todo se hace con pasión y voluntad, logrando involucrar a quienes nos visitan en un ambiente de confianza, rodeados de emociones y sabores directamente del mar a ti.</p>
-    </div>
-</div>
-<router-outlet></router-outlet>
+<router-outlet />
