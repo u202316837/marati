@@ -1,1 +1,38 @@
-<p>contactus works!</p>
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form [formGroup]="myForm" (ngSubmit)="submit()">
+              <div class="form-group mb-2">
+                <label>Nombres</label>
+                <input type="text" formControlName="nombres" class="form-control" />
+              </div>
+              <div class="form-group mb-2">
+                <label>Apellido Paterno</label>
+                <input type="text" formControlName="apellido_paterno" class="form-control" />
+              </div>
+              <div class="form-group mb-2">
+                <label>Apellido Materno</label>
+                <input type="text" formControlName="apellido_materno" class="form-control" />
+              </div>
+              <div class="form-group mb-2">
+                <label>Telefono</label>
+                <input type="text" formControlName="documento_identidad" class="form-control" />
+              </div>
+              <div class="form-group mb-2">
+                <label>Correo</label>
+                <input type="email" formControlName="correo" class="form-control" />
+              </div>
+              <div class="form-group mb-2">
+                <label>Comentarios</label>
+                <textarea formControlName="comentarios" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15600.762477218035!2d-77.01974800000002!3d-12.167422!3m2!1i1024!2i768!4f13.1!2m1!1sel%20marati!5e0!3m2!1ses-419!2sus!4v1745885785486!5m2!1ses-419!2sus" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+    </div>
+</section>
