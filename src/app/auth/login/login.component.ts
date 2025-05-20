@@ -34,6 +34,7 @@ export class LoginComponent {
           if (res && res.data && Array.isArray(res.data) && res.data.length > 0) {
             const user = res.data[0];
             if (user.rol === 'Administrador') {
+              localStorage.setItem('admin_session', 'true');
               this.router.navigate(['/admin/login']);
             } else {
               this.router.navigate(['/cliente/login']);

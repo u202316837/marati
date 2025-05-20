@@ -1,1 +1,95 @@
-<p>login works!</p>
+<div class="container-fluid min-vh-100 d-flex flex-column flex-md-row p-0">
+  <!-- Sidebar -->
+  <nav class="bg-light border-end col-12 col-md-3 col-lg-2 p-3 d-flex flex-md-column align-items-center align-items-md-start">
+    <div class="mb-4 w-100 text-center text-md-start">
+      <h4 class="fw-bold">Bienvenido, Administrador</h4>
+    </div>
+    <ul class="nav flex-row flex-md-column w-100">
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link active" href="#">Categorías</a>
+      </li>
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link" href="#">Productos</a>
+      </li>
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link" href="#">Pedidos</a>
+      </li>
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link" href="#">Clientes</a>
+      </li>
+      <li class="nav-item mt-4 w-100">
+        <button class="btn btn-outline-danger w-100" (click)="logout()">Cerrar sesión</button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-fill p-4 bg-white d-flex flex-column align-items-center justify-content-start">
+    <div class="w-100 text-center mb-4">
+      <h2 class="mb-3">Panel de Administración</h2>
+      <p class="lead">Resumen de pedidos</p>
+    </div>
+    <!-- Resumen de pedidos -->
+    <div class="row w-100 g-3 mb-4">
+      <div class="col-12 col-md-4">
+        <div class="card text-center border-primary">
+          <div class="card-body">
+            <h6 class="card-title text-primary">Total de Pedidos</h6>
+            <h3 class="fw-bold">120</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="card text-center border-warning">
+          <div class="card-body">
+            <h6 class="card-title text-warning">Pendientes</h6>
+            <h3 class="fw-bold">15</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="card text-center border-success">
+          <div class="card-body">
+            <h6 class="card-title text-success">Entregados</h6>
+            <h3 class="fw-bold">105</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Lista de últimos pedidos entregados -->
+    <div class="card w-100 mb-3">
+      <div class="card-header bg-success text-white">
+        Últimos pedidos entregados
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Pedido #120 <span class="badge bg-success">Entregado</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Pedido #119 <span class="badge bg-success">Entregado</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Pedido #118 <span class="badge bg-success">Entregado</span>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Right Panel -->
+  <aside class="d-none d-lg-block col-lg-2 bg-light border-start p-3">
+    <div class="h-100 d-flex flex-column align-items-center">
+      <h6 class="fw-bold mb-3">Últimos comentarios</h6>
+      <ul class="list-group w-100">
+        <li class="list-group-item small">
+          <span class="fw-bold">Juan P.:</span> Excelente servicio!
+        </li>
+        <li class="list-group-item small">
+          <span class="fw-bold">Ana G.:</span> Muy rápido el pedido.
+        </li>
+        <li class="list-group-item small">
+          <span class="fw-bold">Carlos R.:</span> Todo llegó perfecto.
+        </li>
+      </ul>
+    </div>
+  </aside>
+</div>
