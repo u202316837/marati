@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-product',
   imports: [ReactiveFormsModule],
   templateUrl: './product.component.html',
-  styleUrl: './product.component.css'
+  styleUrl: './product.component.css',
+  encapsulation: ViewEncapsulation.None 
 })
 export class ProductComponent {
   constructor(
@@ -25,5 +26,17 @@ export class ProductComponent {
     } else {
       alert('Por favor, complete los campos requeridos');
     }
+  }
+
+  ngAfterViewInit() {
+    $('.set-bg').each(function () {
+      var bg = $(this).data('setbg');
+      $(this).css('background-image', 'url(' + bg + ')');
+    });
+
+    // Esperar a que el DOM esté completamente cargado
+    setTimeout(() => {
+
+    }, 500);
   }
 }

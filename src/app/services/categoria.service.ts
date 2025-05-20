@@ -1,21 +1,18 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { CategoriaModel } from '../models/producto-model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategoriaService {
 
-  private categorias: CategoriaModel[] = [
-    { id: 1, nombre: 'Entradas', descripcion: 'Entradas deliciosas', imagen: 'ruta-imagen-entradas.jpg' },
-    { id: 2, nombre: 'Ceviches', descripcion: 'Frescos ceviches', imagen: 'ruta-imagen-ceviches.jpg' },
-    // Puedes agregar más categorías...
-  ];
+  constructor(
+    private readonly http: HttpClient
+  ) { }
 
-  constructor() { }
-
-  getCategorias(): Observable<CategoriaModel[]> {
-    return of(this.categorias);
+  obtenerCategoria(id_categoria: string) {
+    return this.http.get("https://koo9h7kg4l.execute-api.us-east-1.amazonaws.com/v1/categoria?id_categoria=" + id_categoria, {
+      responseType: "json"
+    });
   }
 }

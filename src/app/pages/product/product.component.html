@@ -1,101 +1,82 @@
-<div class="breadcrumb-option">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="breadcrumb__text">
-                    <h2>Detalle del producto</h2>
+<!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="breadcrumb__text">
+                        <h2>Product detail</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="breadcrumb__links">
-                    <a href="./home">Home</a>
-                    <span>></span>
-                    <a href="./category">Ceviches</a>
-                    <span>></span>
-                    <span>Ceviche de Pescado</span>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html">Home</a>
+                        <a href="./shop.html">Shop</a>
+                        <span>Sweet autumn leaves</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<section class="product-details spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="product__details__img">
-                    <div class="product__details__big__img">
-                        <img class="big_img" src="assets/img/products/product_tb_232x210.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="product__details__text">
-                    <div class="product__label">Ceviches</div>
-                    <h4>Ceviche de Pescado</h4>
-                    <h5>S/ 26.41</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
-                    <ul>
-                        <li>Categoria: <span>Ceviches</span></li>
-                        <li>Etiquetas: <span>Pescados, Frio</span></li>
-                    </ul>
-                    <div class="product__details__option">
-                        <div class="quantity">
-                            <span>Cantidad:</span>
-                            <input type="text" value="2">
+    <!-- Breadcrumb End -->
+
+    <!-- Shop Details Section Begin -->
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product__details__img">
+                        <div class="product__details__big__img">
+                            <img class="big_img" src="img/shop/details/product-big-1.jpg" alt="">
                         </div>
-                        <a href="./product" class="primary-btn">Agregar pedido</a>
+                        <div class="product__details__thumb">
+                            <div class="pt__item active">
+                                <img data-imgbigurl="img/shop/details/product-big-2.jpg"
+                                src="img/shop/details/product-big-2.jpg" alt="">
+                            </div>
+                            <div class="pt__item">
+                                <img data-imgbigurl="img/shop/details/product-big-1.jpg"
+                                src="img/shop/details/product-big-1.jpg" alt="">
+                            </div>
+                            <div class="pt__item">
+                                <img data-imgbigurl="img/shop/details/product-big-4.jpg"
+                                src="img/shop/details/product-big-4.jpg" alt="">
+                            </div>
+                            <div class="pt__item">
+                                <img data-imgbigurl="img/shop/details/product-big-3.jpg"
+                                src="img/shop/details/product-big-3.jpg" alt="">
+                            </div>
+                            <div class="pt__item">
+                                <img data-imgbigurl="img/shop/details/product-big-5.jpg"
+                                src="img/shop/details/product-big-5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product__details__text">
+                        <div class="product__label">Cupcake</div>
+                        <h4>SWEET AUTUMN LEAVES</h4>
+                        <h5>$26.41</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
+                        <ul>
+                            <li>SKU: <span>17</span></li>
+                            <li>Category: <span>Biscuit cake</span></li>
+                            <li>Tags: <span>Gadgets, minimalisstic</span></li>
+                        </ul>
+                        <div class="product__details__option">
+                            <div class="quantity">
+                                <div class="pro-qty">
+                                    <input type="text" value="2">
+                                </div>
+                            </div>
+                            <a href="#" class="primary-btn">Agregar pedido</a>
+                            <a href="#" class="heart__btn"><span class="icon_heart_alt"></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <hr>
         </div>
-    </div>
-</section>
-<div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <div class="breadcrumb__text">
-                    <h2>Comentarios</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<section>
-    <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <form [formGroup]="myForm" (ngSubmit)="submit()">
-              <div class="form-group mb-2">
-                <label>Nombres</label>
-                <input type="text" formControlName="nombres" class="form-control" />
-              </div>
-              <div class="form-group mb-2">
-                <label>Correo</label>
-                <input type="email" formControlName="correo" class="form-control" />
-              </div>
-              <div class="form-group mb-2">
-                <label>Comentarios</label>
-                <textarea formControlName="comentarios" class="form-control"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-          </div>
-          <div class="col-md-6">
-            <div class="comments-section">
-                <h3>Comentarios</h3>
-                <div class="comment">
-                    <p><strong>Juan Perez:</strong> Este ceviche es delicioso!</p>
-                </div>
-                <div class="comment">
-                    <p><strong>Maria Lopez:</strong> Me encanta el sabor fresco del pescado.</p>
-                </div>
-                <div class="comment">
-                    <p><strong>Carlos Sanchez:</strong> Perfecto para un día caluroso.</p>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
-</section>
+    </section>
+    <!-- Shop Details Section End -->

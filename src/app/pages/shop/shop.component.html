@@ -1,19 +1,472 @@
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Ordenar</li>
-    </ol>
-</nav>
-<div class="row">
-  <div class="col-12">
-    <h1>Catálogo Principal</h1>
-    <p>Bienvenido al catálogo principal de nuestra aplicación.</p>
-  </div>
-  <div class="col-12" *ngFor="let producto of productos">
-    <!-- Aquí puedes usar un componente para mostrar cada item del catálogo -->
-    <!-- Por ejemplo, un componente llamado 'app-catalogo-item' -->
-    <!-- Puedes pasarle el item como input si es necesario -->
-    <!-- <app-catalogo-item [item]="item"></app-catalogo-item> -->
-    <app-item [producto]="producto"></app-item>
-  </div>
-</div>
+ <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="breadcrumb__text">
+                        <h2>Platos</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html">Home</a>
+                        <span>Platos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Shop Section Begin -->
+    <section class="shop spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/causa-de-pulpa-de-cangrejo.jpg">
+                            <div class="product__label">
+                                <span>Entradas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Causa de Pulpa de Cangrejo</a></h6>
+                            <div class="product__item__price">S/. 22.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/causa-langostinos.jpg">
+                            <div class="product__label">
+                                <span>Entradas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Causa de Langostinos</a></h6>
+                            <div class="product__item__price">S/. 22.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/causa-polvo-olivo.jpg">
+                            <div class="product__label">
+                                <span>Entradas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Causa de Pulpo al Olivo</a></h6>
+                            <div class="product__item__price">S/. 25.00</div>
+                            <div class="cart_add">
+                                <a href="#">AAgregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/leche-de-tigre-de-campeones.jpg">
+                            <div class="product__label">
+                                <span>Entradas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Leche de Tigre</a></h6>
+                            <div class="product__item__price">S/. 22.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/leche-pantera.jpg">
+                            <div class="product__label">
+                                <span>Entradas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Leche de Pantera</a></h6>
+                            <div class="product__item__price">S/. 26.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/pulpo-al-olivo.jpeg">
+                            <div class="product__label">
+                                <span>Entradas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Pulpo al Olivo</a></h6>
+                            <div class="product__item__price">S/. 45.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/conchitas-a-la-parmesana.jpg">
+                            <div class="product__label">
+                                <span>Entradas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Conchitas a la Parmesana</a></h6>
+                            <div class="product__item__price">S/. 40.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/unas-de-cangrejo.png">
+                            <div class="product__label">
+                                <span>Entradas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Uñas de Cangrejo al Limón</a></h6>
+                            <div class="product__item__price">S/. 45.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/choros-a-la-chalaca.jpg">
+                            <div class="product__label">
+                                <span>Entradas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Choritos a la Chalaca</a></h6>
+                            <div class="product__item__price">S/. 28.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/tequenos-peru.jpg">
+                            <div class="product__label">
+                                <span>Entradas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Tequeños de Langostinos</a></h6>
+                            <div class="product__item__price">S/. 22.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/Tiradito-en-aji-amarillo.jpg">
+                            <div class="product__label">
+                                <span>Tiraditos</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Tiradito a la Crema de Ají Amarillo</a></h6>
+                            <div class="product__item__price">S/. 31.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/Tiradito-en-rocoto.jpg">
+                            <div class="product__label">
+                                <span>Tiraditos</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Tiradito a la Crema de Rocoto</a></h6>
+                            <div class="product__item__price">S/. 31.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/Tiradito-tricolor.jpg">
+                            <div class="product__label">
+                                <span>Tiraditos</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Tiradito Tricolor</a></h6>
+                            <div class="product__item__price">S/. 36.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/Ceviche-pescado.jpg">
+                            <div class="product__label">
+                                <span>Ceviches</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Ceviche de Pescado</a></h6>
+                            <div class="product__item__price">S/. 31.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/Ceviche-mixto.jpg">
+                            <div class="product__label">
+                                <span>Ceviches</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Ceviche Mixto</a></h6>
+                            <div class="product__item__price">S/. 36.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/Ceviche-conchas-negras.jpg">
+                            <div class="product__label">
+                                <span>Ceviches</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Ceviche de Conchas Negras</a></h6>
+                            <div class="product__item__price">S/. 36.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/Ceviche-marisco.jpg">
+                            <div class="product__label">
+                                <span>Ceviches</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Ceviche de Mariscos</a></h6>
+                            <div class="product__item__price">S/. 45.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/Arroz-mariscos.jpeg">
+                            <div class="product__label">
+                                <span>Arroces</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Arroz con Mariscos</a></h6>
+                            <div class="product__item__price">S/. 36.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/Arroz-con-langostinos.jpg">
+                            <div class="product__label">
+                                <span>Arroces</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Arroz con Langostinos</a></h6>
+                            <div class="product__item__price">S/. 41.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/chaufa-pescado.jpg">
+                            <div class="product__label">
+                                <span>Arroces</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Chaufa de Pescado</a></h6>
+                            <div class="product__item__price">S/. 31.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/chaufa_de_mariscos.jpg">
+                            <div class="product__label">
+                                <span>Arroces</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Chaufa de Mariscos</a></h6>
+                            <div class="product__item__price">S/. 36.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/chaufa-con-langostinos.jpg">
+                            <div class="product__label">
+                                <span>Arroces</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Chaufa de Langostinos</a></h6>
+                            <div class="product__item__price">S/. 40.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/chilcano.png">
+                            <div class="product__label">
+                                <span>Sopas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Chilcano Marati</a></h6>
+                            <div class="product__item__price">S/. 19.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/parihuela-pescado.jpg">
+                            <div class="product__label">
+                                <span>Sopas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Parihuela de Pescado</a></h6>
+                            <div class="product__item__price">S/. 31.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/parihuela-mixta.jpg">
+                            <div class="product__label">
+                                <span>Sopas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Parihuela Mixta</a></h6>
+                            <div class="product__item__price">S/. 34.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/chupe-de-langostinos.jpg">
+                            <div class="product__label">
+                                <span>Sopas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Chupe de Langostinos</a></h6>
+                            <div class="product__item__price">S/. 41.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/Chupe-de-mariscos.jpg">
+                            <div class="product__label">
+                                <span>Sopas</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Chupe de Mariscos</a></h6>
+                            <div class="product__item__price">S/. 41.00</div>
+                            <div class="cart_add">
+                                <a href="#">Agregar a Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop__last__option">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="shop__pagination">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#"><span class="arrow_carrot-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Section End -->
