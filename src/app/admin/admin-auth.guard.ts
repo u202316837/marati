@@ -6,7 +6,7 @@ export class AdminAuthGuard implements CanActivate {
   constructor(private router: Router) {}
 
   canActivate(): boolean {
-    // Aquí deberías comprobar si la sesión está activa (ejemplo con localStorage)
+    // comprobar si la sesión está activa
     const isLoggedIn = !!localStorage.getItem('admin_session');
     if (!isLoggedIn) {
       this.router.navigate(['/home']);
